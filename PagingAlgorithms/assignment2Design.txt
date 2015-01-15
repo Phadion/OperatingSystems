@@ -1,0 +1,158 @@
+- creating a thread
+- accessing pages in memory
+- pages.txt
+	- will contain a sequence of random numbers from 1-99
+	- separated by a space character
+	- these will be the pages that will be accessed in main memory
+- create random number function
+	- max 99
+- prompt for creating frame size
+	- create variable name: frame_size
+- create a function to read pages.txt and input into vector
+- use random number function (1-99) to retrieve pages from pages.txt 
+- if page is not in vector
+	- use one of the algorithms
+		- OPT
+		- LRU
+		- Clock
+- Data structures necessary
+	- vector of size frame_size. vector <int> frame. 
+	- vector of size 99. vector <int> present_pages. 
+	- maybe a struct for each page
+		- attribute would be page # and an int. The int being an indication 
+		 of some kind of priority.
+
+
+	- struct page_struct{
+		//int page_num;//might not need this. index in vector can be page num
+		int total_index = 0;
+		int total_count = 0;
+		int in_memory = 0;
+	  }
+
+	- vector<page_struct> pages;
+
+
+
+OPT Algorithm
+	- based off of which page is least required in the future.
+	- To implement: 
+		- might need another data structure of size 100. Another vector
+		  maybe. Name of vector: present_pages
+		- parse pages.txt. If element is present in pages.txt, go to
+		  present_pages vector and increment number of index. ie: if first 
+		  number in pages.txt is 1, go to index 1 and increment by 1. 
+			- do this until EOF. 
+	- To run Algo.: 
+		- parse pages.txt again. Keep on pushing number into frame vector 			  until full. 
+		- every time a number is pushed into frame, decrement its number in 
+		  present_pages or it's int value in struct. 
+		- when frame vector is full 
+			- decide which to replace. 
+			- The element with the least count in present_pages will be 				  removed and replaced from frame.
+			- once page that needs to be in frame is in frame, decrement
+			- if the page is already in frame do nothing. //continue
+			- once EOF -> done SON. 
+ 
+
+
+Implementation2:
+	- create page struct. 
+		page_struct p_struct;
+	- variables. 
+		int current_num;//num in page.txt
+		int current_index = 0;
+		int current_iteration
+			- possibly the i value of for loop
+			- i;//index of loop
+ 
+	- parse through page.txt to create data structure.   
+		
+		index = current_num.
+		
+		while not EOF{
+		- get number from page.txt.//number from page.txt = index to go to in
+		  vector of page_struct.
+			//- pages[index].page_num = current_num.not necessary, index 
+			    would be page num. 
+			- pages[index].total_index += i;
+			- pages[index].total_count++;
+
+		 	- p_struct.page_num = current_num.
+			- p_struct.total_index += i;
+			- p_struct.total_count++;
+		}
+
+
+	- parse page.txt again to start loading into frame vector 
+		
+		//loads max pages into frame
+		while frame vector is not full{
+			current_num = get num from page.txt; 
+			pages[current_num].in_memory = 1;
+			push into frame;
+		}
+
+		//start using OPT algo. 
+		if pages[current_num].in_memory == 1 then continue;
+		else{
+			use OPT algo to kick out element; 
+		}
+
+
+
+
+
+OPT algo: 
+	- iterate through memory frames, int i = 0;
+		- int page_waiting;//parameter for method. 
+		- int page_removed; 
+		- get page_num from frame 
+		- int max_total_index; = pages[page_num].total_index. 
+		- if(pages[page_num].total_count == 0)
+			//replace page with page that's waiting. 
+			page_removed = frame [i];
+			frame[i] = page_waiting. 
+			pages[page_removed].in_memory = 0; 
+			change pages[page_waiting].in_memory = 1; 
+		- else
+			find page with highest total_index. //external function. 
+			//replace page with page that's waiting
+
+
+//input: vector of page_structs
+//output: index of page with highest index. 
+int find page with highest index 
+
+	
+//////////////////////////////////////////////////////////////////////////////////
+LRU algo notes
+
+
+///////////////////////////////////////////////////////////////////////////////////
+main
+
+SEGMENTATION FAULT!!!!!!!!
+SEGMENTATION FAULT!!!!!!!!
+SEGMENTATION FAULT!!!!!!!!
+
+need to figure out position in memory
+if the pointer is set to the end of the array, index to be returned should be 0(beginning)
+		
+set index to rmv to 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+> ./page_sim 
+Please enter a frame size: 5
+Please enter number of pages to reference: 100
+Number of faults with opt: 80
+Number of faults with lru: 93
+Number of faults with clock: 95
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 200
+Number of faults with opt: 158
+Number of faults with lru: 191
+Number of faults with clock: 191
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 400
+Number of faults with opt: 309
+Number of faults with lru: 371
+Number of faults with clock: 370
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 800
+Number of faults with opt: 631
+Number of faults with lru: 759
+Number of faults with clock: 759
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 1600
+Number of faults with opt: 1244
+Number of faults with lru: 1521
+Number of faults with clock: 1516
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 3200
+Number of faults with opt: 2494
+Number of faults with lru: 3051
+Number of faults with clock: 3048
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 3200
+Number of faults with opt: 2488
+Number of faults with lru: 3028
+Number of faults with clock: 3030
+> ./page_sim
+Please enter a frame size: 10
+Please enter number of pages to reference: 3200
+Number of faults with opt: 2076
+Number of faults with lru: 2865
+Number of faults with clock: 2876
+> ./page_sim
+Please enter a frame size: 20
+Please enter number of pages to reference: 3200
+Number of faults with opt: 1556
+Number of faults with lru: 2518
+Number of faults with clock: 2520
+> ./page_sim
+Please enter a frame size: 40
+Please enter number of pages to reference: 3200
+Number of faults with opt: 930
+Number of faults with lru: 1939
+Number of faults with clock: 1943
+> ./page_sim
+Please enter a frame size: 80
+Please enter number of pages to reference: 3200
+Number of faults with opt: 251
+Number of faults with lru: 610
+Number of faults with clock: 633
+> ./page_sim
+Please enter a frame size: 160
+Please enter number of pages to reference: 3200
+> ./page_sim
+Please enter a frame size: 5
+Please enter number of pages to reference: 100
+Number of faults with opt: 77
+Number of faults with lru: 96
+Number of faults with clock: 96
+> ./page_sim
+Please enter a frame size: 10
+Please enter number of pages to reference: 200
+Number of faults with opt: 132
+Number of faults with lru: 177
+Number of faults with clock: 178
+> ./page_sim
+Please enter a frame size: 20
+Please enter number of pages to reference: 400
+Number of faults with opt: 203
+Number of faults with lru: 314
+Number of faults with clock: 320
+> ./page_sim
+Please enter a frame size: 40
+Please enter number of pages to reference: 800
+Number of faults with opt: 249
+Number of faults with lru: 471
+Number of faults with clock: 453
+> ./page_sim
+Please enter a frame size: 80
+Please enter number of pages to reference: 1600
+Number of faults with opt: 164
+Number of faults with lru: 332
+Number of faults with clock: 351
+
